@@ -57,7 +57,7 @@ class App extends Component {
       simpleStorage.deployed().then((instance) => {
         this.simpleStorageInstance = instance
         this.setState({ account: accounts[0] })
-         Get the value from the contract to prove it worked.
+         //Get the value from the contract to prove it worked.
         return this.simpleStorageInstance.get.call(accounts[0])
       }).then((ipfsHash) => {
          Update state with the result.
